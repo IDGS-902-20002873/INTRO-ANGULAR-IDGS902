@@ -10,8 +10,8 @@ import { MenuComponent } from './utl/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OperasbasComponent } from './utl/operasbas/operasbas.component';
-import {MatInputModule} from '@angular/material/input';
+import { OperasModule } from './utl/formularios/operas/operas.module';
+import { DistanciaModule } from './utl/distancia/distancia-modulo/distancia.module';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,13 @@ import {MatInputModule} from '@angular/material/input';
     IricComponent,
     MenuComponent,
     SumaComponent,
-    OperasbasComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule
+    OperasModule,
+    DistanciaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
